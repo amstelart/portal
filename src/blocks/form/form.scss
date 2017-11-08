@@ -38,4 +38,18 @@ $line-height:                 1.375em !default;
     line-height: $line-height;
     color: currentColor;
   }
+
+  &--login {
+    min-width: 240px;
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &--registration {
+    min-width: 560px;
+    .field-actions {
+      text-align: center;
+    }
+  }
 }
