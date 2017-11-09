@@ -11,6 +11,60 @@
     padding: 30px;
     border-radius: 5px;
   }
+
+  &__header {
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__nav-item {
+    color: $gray-light;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 2px solid $gray-light;
+
+    &:hover,
+    &:focus {
+      color: #000;
+    }
+
+    &--active {
+      color: $color-main;
+      border-color: $color-main;
+      &:hover,
+      &:focus {
+        color: $color-main;
+      }
+    }
+  }
+
+  &__search {
+    margin-top: 15px;
+    margin-left: auto;
+    .field-text__input {
+      border-radius: 5px 0 0 5px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn {
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &__counter {
+    margin-bottom: 20px;
+    @include make-col(12);
+  }
+
   &__row {
     @include row;
   }
@@ -19,6 +73,10 @@
     @include make-col(4);
     border-radius: 5px;
     margin-bottom: 30px;
+  }
+
+  &__card-link {
+    text-decoration: none;
   }
 
   &__card-image {

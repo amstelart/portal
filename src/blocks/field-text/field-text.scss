@@ -30,6 +30,10 @@ $border-radius:               3px !default;
 
   &__input-wrap {
     display: block;
+
+    &--input-btn-group {
+      display: flex;
+    }
   }
 
   &__input {

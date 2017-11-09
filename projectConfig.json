@@ -63,7 +63,8 @@
     "content-card": [],
     "field-link": [],
     "tags": [],
-    "courses": []
+    "courses": [],
+    "comments": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -1,0 +1,39 @@
+// В этом файле должны быть стили для БЭМ-блока comments, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.comments {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    display: flex;
+    margin-top: $line-height;
+    margin-bottom: $line-height;
+  }
+
+  &__item-picture {
+    flex-shrink: 0;
+    margin-right: 1em;
+  }
+
+  &__item-body {
+    flex-grow: 1;
+
+    *:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__name-user {
+    font-weight: 700;
+  }
+
+  &__item-date {
+    flex-shrink: 0;
+    margin-left: 1em;
+  }
+
+
+
+}

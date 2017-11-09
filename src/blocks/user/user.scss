@@ -17,11 +17,17 @@
     border-radius: 50%;
     margin: 0 auto 20px auto;
     background-size: cover;
+    &--sm {
+      width: 60px;
+      height: 60px;
+      border: none;
+    }
   }
   &__name {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
   }
+
 
 }
