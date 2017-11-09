@@ -56,11 +56,43 @@ $table-padding-horizontal:    2em ;
     }
   }
 
+  &__header-item {
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url(../img/icon-sort.png);
+      background-repeat: no-repeat;
+      background-position: center left;
+    }
+    cursor: pointer;
+    &--sortdown {
+      &:after {
+        background-image: url(../img/icon-sort-down.png);
+      }
+    }
+    &--sortup {
+      &:after {
+        background-image: url(../img/icon-sort-up.png);
+      }
+    }
+  }
+
   &__body {
     tr {
       background: #fff;
+      cursor: pointer;
       &:nth-child(even) {
         background: #f3f3f3;
+      }
+
+      &:hover,
+      &:focus {
+        // background: darken(#f3f3f3, 5%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       }
     }
   }

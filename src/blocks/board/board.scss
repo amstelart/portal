@@ -15,7 +15,8 @@
     justify-content: space-between;
   }
   &__body {
-    .table-mobile-scroll {
+    .table-mobile-scroll,
+    .table {
       margin: 0;
     }
   }
@@ -39,6 +40,19 @@
     width: 2px;
     background: #8f8f8f;
     margin: 0 30px;
+  }
+
+  &__table {}
+  &__table-header {
+    background: $color-main;
+    color: #fff;
+    padding: 10px;
+  }
+  &__table-row {
+    @include row;
+  }
+  &__table-col {
+    @include make-col(3);
   }
 
 }
