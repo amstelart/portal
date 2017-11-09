@@ -7,8 +7,8 @@ $gray-lightest:               hsl(0, 0%, 90%) !default;
 $text-color:                  hsl(0, 0%, 10%) !default;
 $line-height:                 1.375em;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$btn-padding-vertical:      0.3em !default;
+$btn-padding-horizontal:    2.4em;
 
 $border-radius:               3px !default;
 
@@ -19,7 +19,7 @@ $border-radius:               3px !default;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: $field-padding-vertical  $btn-padding-horizontal;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;

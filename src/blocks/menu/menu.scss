@@ -19,25 +19,49 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
     &--separator {
 
-      &:not(:last-child) {
-        padding-bottom: 0.3em;
-        margin-bottom: 0.3em;
-        border-bottom: 1px solid $border-color;
-      }
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+      border-bottom: 1px solid $border-color;
+
     }
+
   }
 
   &__link {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0.3em 1em;
-    color: $text-color;
+    padding: 12px 30px;
+    color: $gray;
     text-decoration: none;
 
+    .icon {
+      margin-right: 10px;
+      fill: #8f8f8f;
+    }
+
     &:hover,
-    &:focus {}
+    &:focus {
+      color: #000;
+    }
+
+    &--active {
+      background: #3c758e;
+      background: linear-gradient(to right, #3c758e 0%,#5288cb 100%);
+      color: #fff;
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+  }
+
+  &--bottom {
+    margin-top: auto;
+    margin-bottom: 20px;
   }
 }

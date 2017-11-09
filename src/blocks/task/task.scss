@@ -1,0 +1,45 @@
+// В этом файле должны быть стили для БЭМ-блока task, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.task {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 18px;
+  }
+
+  &__video {
+    margin-bottom: 30px;
+  }
+
+  &__link-group {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__link + .task__link {
+    margin-left: 20px;
+  }
+  &__link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    .icon {
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+  }
+  &__result {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+}

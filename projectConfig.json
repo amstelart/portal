@@ -55,7 +55,15 @@
     "close": [],
     "tabs": [],
     "object-fit-polyfill": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "user": [],
+    "dev": [],
+    "mentor": [],
+    "task": [],
+    "content-card": [],
+    "field-link": [],
+    "tags": [],
+    "courses": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

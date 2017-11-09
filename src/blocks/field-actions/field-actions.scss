@@ -40,4 +40,16 @@ $line-height:                 1.375em !default;
       }
     }
   }
+
+  &--btn-group {
+    display: flex;
+    justify-content: space-between;
+    .btn + .btn {
+      margin-left: 10px;
+    }
+    .btn {
+      flex-grow: 1;
+      width: 33.3333%;
+    }
+  }
 }

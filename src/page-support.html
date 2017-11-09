@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner page__inner--portal">
+
+    <div class="page__sidebar">
+
+      <div class="user">
+        <div class="user__avatar" style="background-image: url(img/demo-user-avatar.jpg);"></div>
+        <div class="user__name">Тимофеев С.</div>
+      </div>
+
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="#">
+            <svg class="icon" width="22" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-course"></use></svg>
+            Курсы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="16" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-user"></use></svg>
+            Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="20" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-mentor"></use></svg>
+            Наставник</a>
+        </li>
+      </ul>
+
+      <ul class="menu menu--bottom">
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-help"></use></svg>
+          Техподдержка</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="12" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-out"></use></svg>
+          Выйти</a>
+        </li>
+      </ul>
+
+      <div class="dev">
+        <p>Разработка</p>
+        <a href="http://www.2showbiz.ru/">Showbiz Studio</a>
+      </div>
+
+    </div>
+
+
+    <div class="page__content">
+
+      <h1 class="page__title">Техподдержка</h1>
+
+      <div class="contacts-list">
+        <p><strong>E-mail:</strong> smirnova90@yandex.ru</p>
+        <p><strong>Телефон:</strong> +7-(111)-111-11-11</p>
+      </div>
+
+      <div class="content-card">
+        <h2 class="content-card__title">Отправить сообщение техподдержке</h2>
+        <form action="" class="form">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" placeholder="Введите сообщение"></textarea>
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

@@ -1,0 +1,24 @@
+// В этом файле должны быть стили для БЭМ-блока mentor, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mentor {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 8px 0;
+  margin-bottom: 40px;
+  display: flex;
+
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    background-color: $gray;
+    border-radius: 50%;
+    background-size: cover;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+  &__info {}
+
+}

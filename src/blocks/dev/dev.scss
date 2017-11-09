@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока dev, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.dev {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-top: 1px solid $gray-light;
+  color: $gray-light;
+  text-align: center;
+  padding: 30px 15px;
+  margin: 0 10px;
+  a {
+    color: $color-main;
+    text-decoration: none;
+  }
+
+}

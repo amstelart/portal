@@ -29,8 +29,15 @@ $text-color:                  hsl(0, 0%, 10%) !default;
   }
 
   &__link {
-    color: $text-color;
+    color: $color-main;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 15px;
+      fill: $color-main;
+    }
 
     &:hover,
     &:focus {
