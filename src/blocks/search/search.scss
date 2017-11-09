@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока search, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.search {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .field-text__input {
+    border-radius: 5px 0 0 5px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn {
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+  }
+
+}

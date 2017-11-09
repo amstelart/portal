@@ -1,0 +1,44 @@
+// В этом файле должны быть стили для БЭМ-блока board, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.board {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 1145px;
+
+  &__header {
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__body {
+    .table-mobile-scroll {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    font-size: 16px;
+  }
+  &__nav-item {
+    color: $gray-light;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 0;
+
+    &--active {
+      color: #000;
+    }
+
+  }
+  &__separate {
+    width: 2px;
+    background: #8f8f8f;
+    margin: 0 30px;
+  }
+
+}

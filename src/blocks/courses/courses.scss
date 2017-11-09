@@ -42,24 +42,6 @@
     }
   }
 
-  &__search {
-    margin-top: 15px;
-    margin-left: auto;
-    .field-text__input {
-      border-radius: 5px 0 0 5px;
-      &:focus {
-        box-shadow: none;
-      }
-    }
-    .btn {
-      padding: 5px 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0 5px 5px 0;
-    }
-  }
-
   &__counter {
     margin-bottom: 20px;
     @include make-col(12);

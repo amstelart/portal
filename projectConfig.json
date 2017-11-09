@@ -64,7 +64,9 @@
     "field-link": [],
     "tags": [],
     "courses": [],
-    "comments": []
+    "comments": [],
+    "board": [],
+    "search": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
