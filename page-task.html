@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner page__inner--portal">
+
+    <div class="page__sidebar">
+
+      <div class="user">
+        <div class="user__avatar" style="background-image: url(img/demo-user-avatar.jpg);"></div>
+        <div class="user__name">Тимофеев С.</div>
+      </div>
+
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="#">
+            <svg class="icon" width="22" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-course"></use></svg>
+            Курсы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="16" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-user"></use></svg>
+            Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="20" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-mentor"></use></svg>
+            Наставник</a>
+        </li>
+      </ul>
+
+      <ul class="menu menu--bottom">
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-help"></use></svg>
+          Техподдержка</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="12" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-out"></use></svg>
+          Выйти</a>
+        </li>
+      </ul>
+
+      <div class="dev">
+        <p>Разработка</p>
+        <a href="http://www.2showbiz.ru/">Showbiz Studio</a>
+      </div>
+
+    </div>
+
+
+    <div class="page__content">
+
+      <h1 class="page__title">Управление решением для мониторинга автотранспорта</h1>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#temp-icon-left-arrow"></use></svg> Назад</a></li>
+      </ul>
+
+      <div class="task">
+        <div class="task__header">
+          <div class="task__name">Название секции</div>
+          <p class="">Задание секции №4</p>
+        </div>
+
+        <div class="task__video">
+          <img src="img/video-demo-placeholder.jpg" alt="">
+        </div>
+
+        <div class="task__link-group">
+          <a class="task__link" href="#"><svg class="icon" width="30" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-test"></use></svg> Перейти к тесту</a>
+          <a class="task__link" href="#"><svg class="icon" width="30" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-pdf"></use></svg> Презентация PDF</a>
+        </div>
+
+      </div>
+
+      <div class="content-card content-card--lg">
+        <h2 class="content-card__title">Ответ на задание</h2>
+        <form action="" class="form">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" placeholder="Введите сообщение"></textarea>
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main">Отправить</button>
+            <button class="btn btn--main">Прикрепить файл</button>
+            <button class="btn btn--main">Сохранить в черновик</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="content-card content-card--lg">
+        <h2 class="content-card__title">Комментарии</h2>
+        <form action="" class="form">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" placeholder="Введите сообщение"></textarea>
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner page__inner--entry" style="background-image: url(img/entry-bg.jpg);">
+
+    <div class="page__content">
+
+      <h1 class="page__entry-title">Учебный портал ВТИ</h1>
+
+      <div class="page__entry">
+
+        <form action="" class="form form--login">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="+7(909)-999-99-99">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Пароль">
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main">Войти</button>
+            <div class="field-actions__links">
+              <a href="#">Регистрация</a>
+              <a href="#">Забыли пароль?</a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

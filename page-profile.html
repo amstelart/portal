@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner page__inner--portal">
+
+    <div class="page__sidebar">
+
+      <div class="user">
+        <div class="user__avatar" style="background-image: url(img/demo-user-avatar.jpg);"></div>
+        <div class="user__name">Тимофеев С.</div>
+      </div>
+
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="#">
+            <svg class="icon" width="22" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-course"></use></svg>
+            Курсы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="16" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-user"></use></svg>
+            Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <svg class="icon" width="20" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-mentor"></use></svg>
+            Наставник</a>
+        </li>
+      </ul>
+
+      <ul class="menu menu--bottom">
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-help"></use></svg>
+          Техподдержка</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">
+          <svg class="icon" width="12" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-out"></use></svg>
+          Выйти</a>
+        </li>
+      </ul>
+
+      <div class="dev">
+        <p>Разработка</p>
+        <a href="http://www.2showbiz.ru/">Showbiz Studio</a>
+      </div>
+
+    </div>
+
+
+    <div class="page__content">
+
+      <h1 class="page__title">Профиль</h1>
+
+      <div class="content-card content-card--xl">
+
+          <div class="field-row">
+            <div class="field-col">
+              <label class="field-text">
+                <span class="field-text__name">Имя:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" value="Сергей">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">Фамилия:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" value="Тимофеев">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">Телефон:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="tel" value="+7 (999)-999-99-99">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">E-mail:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="email" value="timoser@gmail.com">
+                </span>
+              </label>
+            </div>
+
+            <div class="field-col">
+
+              <label class="field-select">
+                <span class="field-select__name">Компания:</span>
+                <span class="field-select__select-wrap">
+                  <select class="field-select__select">
+                    <option>ВТИ</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 10</option>
+                  </select>
+                </span>
+              </label>
+
+              <label class="field-select">
+                <span class="field-select__name">Должность:</span>
+                <span class="field-select__select-wrap">
+                  <select class="field-select__select">
+                    <option>Менеджер по продажам</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 10</option>
+                  </select>
+                </span>
+              </label>
+
+              <label class="field-text">
+                <span class="field-text__name">Пароль:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="password" value="123456789">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">Пароль еще раз:</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="password" value="123456789">
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field-actions" style="text-align: center;">
+            <button class="btn btn--main">Сохранить</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
