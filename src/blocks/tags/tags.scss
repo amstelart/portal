@@ -6,7 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   &__added,
   &__all {
@@ -32,6 +32,7 @@
     font-size: 12px;
     position: relative;
     margin-right: 10px;
+    margin-bottom: 10px;
     .close {
       position: absolute;
       top: -10px;
@@ -49,6 +50,16 @@
           height: 2px;
         }
       }
+    }
+  }
+
+  &__show-more {
+    margin-top: 10px;
+    flex-basis: 100%;
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 5px 10px;
     }
   }
 

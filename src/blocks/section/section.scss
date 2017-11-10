@@ -1,0 +1,147 @@
+// В этом файле должны быть стили для БЭМ-блока section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+
+  &__num {
+    position: relative;
+    &:after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: -8px;
+      top: 3px;
+      // background-image: url(../img/icon-not-done.png);
+    }
+  }
+
+  &__item {
+    flex-basis: 100%;
+    display: flex;
+
+    #{$block-name}__num {
+      &:after {
+        background-image: url(../img/icon-not-done.png);
+      }
+    }
+
+    &--bone {
+      #{$block-name}__num {
+        &:after {
+          background-image: url(../img/icon-done.png);
+        }
+      }
+      #{$block-name}__cell {
+        &--num {
+          border-color: $color-main;
+        }
+      }
+    }
+
+  }
+
+  &__cell {
+
+    &--num {
+      flex-shrink: 0;
+      width: 100px;
+      border-right: 2px solid #8f8f8f;
+      span {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+
+    &--start,
+    &--end {
+      padding: 10px 10px;
+      background: $color-main;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px 0 0 5px;
+      span {
+        margin-top: 0;
+      }
+    }
+    &--start {
+      border-color: $color-main;
+    }
+    &--end {
+      background: #8f8f8f;
+    }
+
+    &--progress {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 10px 0 0px 25px;
+      span {
+        color: $color-main;
+      }
+    }
+
+
+    &--card {
+      flex-grow: 1;
+      margin: 20px 0 0px 25px;
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+      padding: 30px;
+      max-width: 520px;
+    }
+
+  }
+
+  &__card {
+
+  }
+  &__card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__card-name {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  &__card-body {
+
+  }
+  &__card-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    a {
+      color: #000;
+    }
+  }
+  &__card-cell + .section__card-cell {
+    margin-left: 15px;
+  }
+  &__card-cell {
+    &--task {}
+    &--checked {
+      flex-shrink: 0;
+      width: 24px;
+    }
+    &--rating {
+      span {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #73bd78;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+}
