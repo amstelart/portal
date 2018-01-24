@@ -48,7 +48,9 @@
     <div class="page__sidebar">
 
       <div class="user">
-        <div class="user__avatar" style="background-image: url(img/demo-user-avatar.jpg);"></div>
+        <div class="user__avatar" style="background-image: url(img/demo-user-avatar.jpg);">
+          <a href="#">Редактировать фото</a>
+        </div>
         <div class="user__name">Тимофеев С.</div>
       </div>
 
@@ -94,6 +96,7 @@
       <h1 class="page__title">Профиль</h1>
 
       <div class="content-card content-card--xl">
+        <form action="" class="form-profile">
 
           <div class="field-row">
             <div class="field-col">
@@ -121,6 +124,14 @@
                   <input class="field-text__input" type="email" value="timoser@gmail.com">
                 </span>
               </label>
+              <div class="field-file">
+                <div class="field-file__name">Фотография:</div>
+                <label class="field-file__input-wrap">
+                  <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" multiple>
+                  <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Выберите новую фотографию</div>
+                  <!-- <div class="field-file__help-text">Отображение выбранного файла(ов) требует Javascript-а. Стилизация — не требует.</div> -->
+                </label>
+              </div>
             </div>
 
             <div class="field-col">
@@ -161,12 +172,12 @@
                   <input class="field-text__input" type="password" value="123456789">
                 </span>
               </label>
+              <div class="field-actions">
+                <button class="btn btn--block btn--main">Сохранить</button>
+              </div>
             </div>
           </div>
 
-          <div class="field-actions" style="text-align: center;">
-            <button class="btn btn--main">Сохранить</button>
-          </div>
         </form>
       </div>
 
@@ -174,7 +185,9 @@
 
 
   </div>
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/global-script.js"></script>
 
 </body>
 </html>
