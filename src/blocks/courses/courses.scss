@@ -56,25 +56,58 @@
   }
 
   &__card {
-    @include make-col(4);
+    @include col();
+    @include col(md, 12);
+    @include col(lg, 6);
+    @include col(xl, 4);
     border-radius: 5px;
     margin-bottom: 30px;
   }
 
   &__card-link {
     text-decoration: none;
+    &:hover,
+    &:focus {
+      #{$block-name}__card-name {
+        color: inherit;
+      }
+    }
   }
 
   &__card-image {
     width: 100%;
     padding-bottom: 40%;
     background-size: cover;
+    position: relative;
   }
+
+  &__card-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(121, 121, 121, 0.9);
+    color: #fff;
+    font-size: 14px;
+    padding: 0.7em 1.5em;
+
+    &--danger {
+      background: rgba(230, 60, 60, 0.9);
+    }
+    &--success {
+      background: rgba(41, 159, 85, 0.9);
+    }
+    span+span {
+      margin-left: 15px;
+    }
+  }
+
   &__card-name {
     border: 1px solid $gray-light;
     padding: 20px;
     line-height: 1.4;
     font-size: 18px;
+    color: #000;
   }
 
 }

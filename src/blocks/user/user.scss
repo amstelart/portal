@@ -13,14 +13,40 @@
   &__avatar {
     width: 105px;
     height: 105px;
+    overflow: hidden;
     border: 4px solid $gray-light;
     border-radius: 50%;
     margin: 0 auto 20px auto;
     background-size: cover;
+    position: relative;
     &--sm {
       width: 60px;
       height: 60px;
       border: none;
+    }
+    a {
+      color: #fff;
+      background: rgba(48, 48, 48, 0.7);
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.4;
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: all $transition-time;
+    }
+    &:hover,
+    &:focus {
+      a {
+        opacity: 1;
+      }
     }
   }
   &__name {
@@ -28,6 +54,7 @@
     font-weight: 700;
     text-align: center;
   }
+
 
 
 }

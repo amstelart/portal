@@ -67,7 +67,8 @@
     "comments": [],
     "board": [],
     "search": [],
-    "section": []
+    "section": [],
+    "form-profile": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
