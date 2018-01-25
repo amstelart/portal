@@ -1,16 +1,16 @@
-// В этом файле должны быть стили для БЭМ-блока form-profile, его элементов,
+// В этом файле должны быть стили для БЭМ-блока field-row, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.form-profile {
+.field-row {
 
   $block-name:                &; // #{$block-name}__element
 
-  .field-actions {
-    padding-top: 15px;
-    .btn {
-      margin-bottom: 0;
-    }
+  @include row;
+  
+  .field-col {
+    @include col();
+    @include col(lg, 6);
   }
 
 }
