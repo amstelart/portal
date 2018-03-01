@@ -46,15 +46,31 @@ $border-color:                hsl(0, 0%, 60%) !default;
     &:hover,
     &:focus {
       color: #000;
+
+      .icon {
+        margin-right: 10px;
+        fill: #000;
+      }
     }
 
     &--active {
       background: #3c758e;
       background: linear-gradient(to right, #3c758e 0%,#5288cb 100%);
       color: #fff;
+
+      .icon {
+        margin-right: 10px;
+        fill: #fff;
+      }
+
       &:hover,
       &:focus {
         color: #fff;
+
+        .icon {
+          margin-right: 10px;
+          fill: #fff;
+        }
       }
     }
 
