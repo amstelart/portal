@@ -57,10 +57,8 @@ $table-padding-horizontal:    2em ;
   }
 
   &__header-item {
-    cursor: pointer;
 
-    &:after {
-      content: "";
+    a {
       display: inline-block;
       vertical-align: middle;
       margin-left: 10px;
@@ -68,23 +66,13 @@ $table-padding-horizontal:    2em ;
       height: 15px;
       background-repeat: no-repeat;
       background-position: center left;
-    }
+      background-image: url(../img/icon-sort.png);
 
-    &--sort {
-
-      &:after {
-        background-image: url(../img/icon-sort.png);
-      }
-    }
-
-    &--sortdown {
-      &:after {
+      &.asc {
         background-image: url(../img/icon-sort-down.png);
       }
-    }
 
-    &--sortup {
-      &:after {
+      &.desc {
         background-image: url(../img/icon-sort-up.png);
       }
     }
