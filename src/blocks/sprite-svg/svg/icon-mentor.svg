@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="22" viewBox="0 0 20 22">
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="26" viewBox="0 0 21 26">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
@@ -27,5 +27,12 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<image id="head" width="20" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAQAAABqSHSNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwkAOTrTnEgUAAABpUlEQVQoz43TX2jNYRzH8df5M3FCY1vtxhLqKNQRGVFM2oUlP2IulbsVucCNUkrhcnKKJEou5mLrcGV2YTWamqMW2WlLbC0utIZCazrHxe/s5xyT9rl4er7f5/18n8+3vk8so0JxBxy1XT0m5T3wOCiGR7EKcJ8b1qlWXkcwFNaY0ylPImxIvrzbYiDXXlnxmK7oyhcr8c1SJTHMag36E41Qp9cSZB1SctE4XphwWK2tEnYXbobgGfvBZS/1mQAfPPVTg4NYYTz0GJQfPQ5OGjHqbNlSqPZEIwmdkmbcds0nbe6rV6fVqDfemrFZQiqOJotR0CGPnVFTO/AqOG0EDXFsAmtdkMbzCBzExtwVaUwlGrlkAxZp0aTLmClrTLvqFu44IYmBpGZHohq9ICsbZR5qAz1x18Wi9Gop52wDu5y3zHow4V4s0ydtVYT+kPLdckWf1ZtVg19agmexDLWm/xqFfkV7o2g4yJD0L+2Zn4pboBYCFufAr97/BxvTSeixpFmrGtytQoZ1ywWvw6DyK1Aqr4N65Lzjz2BVdz2poNsjH+c7+A2gL2ssPA25vQAAAABJRU5ErkJggg=="/>
+<defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M64.672,406.723h-0.5c1.223-1.088,2.914-2.688,2.914-4.468v-7.79h1v4.2h1.855v-4.2h1.021V393H51.041v1.965h2.973v7.29c0,1.78,1.274,3.38,2.5,4.468H56.328A6.394,6.394,0,0,0,50,413.167V419H71v-5.833A6.394,6.394,0,0,0,64.672,406.723Zm0.3-11.758v4.084H55.953v-4.084h9.024Zm-9.024,7.29V400.93h8.774v1.325a4.02,4.02,0,0,1-4.3,4.051C58,406.306,55.953,404.719,55.953,402.255Zm7.587,5.683L60.5,412.374l-3.04-4.436h6.079ZM69.03,417H51.97v-3.837c0-2.529,1.33-4.624,3.731-4.938l4.8,6.608,4.8-6.608c2.4,0.314,3.731,2.409,3.731,4.938V417Z" transform="translate(-50 -393)"/>
 </svg>

@@ -41,18 +41,26 @@ $line-height:                 1.375em !default;
 
   &--login {
     min-width: 240px;
-    .btn {
-      width: 100%;
+
+    .field-actions {
+      margin-bottom: 0;
+      .btn {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 
   &--registration {
-    min-width: 560px;
     .field-actions {
-      text-align: center;
+      text-align: left;
     }
     .field-radio {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-md) {
+      min-width: 560px;
     }
   }
 

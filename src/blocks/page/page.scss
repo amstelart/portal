@@ -124,7 +124,6 @@ img {
 
   &__entry {
     background: #fff;
-    padding: 60px;
     border-radius: 6px;
 
     &--main {
@@ -134,10 +133,43 @@ img {
       color: #fff;
     }
   }
+
+  &__entry-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #d0d0d0;
+
+    @media (min-width: $screen-md) {
+      padding: 20px 60px;
+    }
+  }
+  &__entry-header-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  &__entry-header-caption {
+    margin: 0;
+    color: #949393;
+  }
+
+  &__entry-body {
+    padding: 20px;
+
+    @media (min-width: $screen-md) {
+      padding: 30px 60px 40px;
+    }
+  }
+
   &__entry-title {
     color: #fff;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-size: 36px;
+    }
   }
 
   &__entry-video,

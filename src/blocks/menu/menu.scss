@@ -30,17 +30,23 @@ $border-color:                hsl(0, 0%, 60%) !default;
   &__link {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     white-space: nowrap;
     width: 100%;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 12px 30px;
+    padding: 15px 30px;
     color: $gray;
     text-decoration: none;
+    transition: all $transition-time;
 
     .icon {
       margin-right: 10px;
       fill: #8f8f8f;
+      width: 24px;
+      height: 28px;
+      transition: all $transition-time;
     }
 
     &:hover,
@@ -60,7 +66,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
       .icon {
         margin-right: 10px;
-        fill: #fff;
+        fill: #a1d0fd;
       }
 
       &:hover,
@@ -69,7 +75,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
         .icon {
           margin-right: 10px;
-          fill: #fff;
+          fill: #a1d0fd;
         }
       }
     }

@@ -13,10 +13,17 @@ $line-height:                 1.375em !default;
 
   &--inline {
     display: flex;
-    .field-radio__input-wrap + .field-radio__input-wrap {
-      margin-top: 0;
-      margin-left: 20px;
+    flex-wrap: wrap;
+
+
+    #{$block-name}__input-wrap {
+      margin-top: 0.6875em;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
+
     #{$block-name}__title {
       display: block;
       font-weight: 700;
@@ -51,6 +58,8 @@ $line-height:                 1.375em !default;
 
   &__name-text {
 
+    color: #949393;
+
     // свой чекбокс
     &:before {
       content: '';
@@ -62,6 +71,11 @@ $line-height:                 1.375em !default;
       background-image: svg-load('../blocks/field-radio/img_to_bg/radiobutton.svg');
       background-size: 100%;
     }
+
+    @at-root input:checked ~ & {
+      color: #000;
+    }
+
     @at-root input:checked ~ &:before {
       background-image: svg-load('../blocks/field-radio/img_to_bg/radiobutton--checked.svg');
     }

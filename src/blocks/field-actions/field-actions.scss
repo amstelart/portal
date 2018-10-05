@@ -24,7 +24,7 @@ $line-height:                 1.375em !default;
     display: block;
     margin-top: ($line-height / 2);
     margin-bottom: ($line-height / 2);
-    font-size: $font-size--small;
+    font-size: $font-size;
     color: $text-color--muted;
     line-height: 1.2em;
   }
@@ -41,6 +41,11 @@ $line-height:                 1.375em !default;
     }
   }
 
+  &__col {
+    @include col();
+    @include col(lg, 6);
+  }
+
   &--btn-group {
     display: flex;
     justify-content: space-between;
@@ -51,5 +56,9 @@ $line-height:                 1.375em !default;
       flex-grow: 1;
       width: 33.3333%;
     }
+  }
+
+  &--wrap {
+    @include row;
   }
 }

@@ -8,12 +8,18 @@
 
   border-top: 1px solid $gray-light;
   color: $gray-light;
+  font-size: 12px;
   text-align: center;
   padding: 30px 15px;
-  margin: 0 10px;
   a {
-    color: $color-main;
+    color: $gray-light;
     text-decoration: none;
+    transition: color $transition-time;
+
+    &:hover,
+    &:focus {
+      color: $gray;
+    }
   }
 
 }
