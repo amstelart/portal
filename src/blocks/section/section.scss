@@ -120,6 +120,12 @@
     margin-bottom: 10px;
     a {
       color: #000;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
     }
   }
   &__card-cell + .section__card-cell {
